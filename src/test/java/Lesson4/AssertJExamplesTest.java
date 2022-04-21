@@ -1,0 +1,25 @@
+package Lesson4;
+
+import org.junit.jupiter.api.Test;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+
+public class AssertJExamplesTest {
+
+    @Test
+
+    void assertJExample() {
+        assertThat(Functions.isPrime(7)).isTrue();
+        List<String> strings = new ArrayList<>(Arrays.asList("test", "test1", "test2"));
+        assertThat(strings).contains("test1");
+
+
+    }
+
+}
